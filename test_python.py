@@ -56,7 +56,7 @@ def test_random_list():
     """
     # TODO создайте список
     random.seed(10)
-    l = sorted(random.sample(range(1, 100), 10))
+    l = sorted(random.sample(range(1, 101), 10))
 
     assert len(l) == 10
     assert all(l[i] <= l[i + 1] for i in range(len(l) - 1))
